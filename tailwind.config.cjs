@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         fustat: ['Fustat', 'serif'],
+        danching:["Dancing Script", "cursive"],
       },
     },
   },

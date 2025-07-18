@@ -1,3 +1,4 @@
+import Slider from "./components/Banner";
 import Nav from "./components/Nav";
 import TopBanner from "./components/TopBanner";
 
@@ -6,6 +7,7 @@ function App() {
     <div>
      <TopBanner></TopBanner>
       <Nav></Nav>
+      <Slider></Slider>
     </div>
   );
 }
