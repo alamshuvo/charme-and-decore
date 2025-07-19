@@ -1,0 +1,21 @@
+.blob-shape {
+    
+    clip-path: path(
+        "M100 0C300 0 600 100 600 200C400 320 700 340 600 420C500 600 500 400 200 560C50 540 0 400 0 300C0 200 0 100 100 0Z"
+      );
+    overflow: hidden;
+    background: #6c63ff; /* example background */
+  
+    /* animation */
+    animation: floatBlob 4s ease-in-out infinite;
+  }
+  
+  @keyframes floatBlob {
+    0%, 100% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-20px) scale(1.05);
+    }
+  }
+  

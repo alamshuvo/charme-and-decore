@@ -3,7 +3,7 @@ import logoa from "../../public/vite.svg";
 import { Link } from "react-router-dom";
 const Nav = () => {
   return (
-    <div className="border-b border-[#e0e0e0] max-w-[1440px] lg:px-20 px-5 py-2 mx-auto">
+    <div className="border-b border-[#e0e0e0] max-w-[1440px] lg:px-20 px-5 py-2 mx-auto mb-4">
       <div className="flex justify-between items-center">
         <Link to={"/"} className="cursor-pointer">
           <img
