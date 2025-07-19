@@ -5,6 +5,7 @@ import Nav from "./components/Nav";
 import OfferBanner from "./components/Offer";
 import Service from "./components/Service";
 import TopBanner from "./components/TopBanner";
+import Layout from "./Layout/Layout";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Footer></Footer>
       </div>
       </div>
+      <Layout></Layout>
       
     </div>
   );
