@@ -11,7 +11,7 @@ function App() {
         <TopBanner />
         <Nav />
       </div>
-      <div className="space-y-16 overflow-x-hidden">
+      <div className="space-y-20 overflow-x-hidden">
         <Slider />
         <BlobImage />
         <Service></Service>
