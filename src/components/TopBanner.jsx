@@ -6,7 +6,7 @@ export default function TopBanner() {
   return (
     <>
       {show && (
-        <div className="font-fustat animate-slideDown bg-gradient-to-r from-[#8d7acb] to-[#a894e9] lg:h-[30px]">
+        <div className="font-fustat animate-slideDown bg-gradient-to-r from-[#FFC107] to-[#a894e9] lg:h-[30px]">
           <div className="max-w-[1440px] lg:px-20 px-5 mx-auto lg:flex justify-between items-center h-full">
             <p className="text-white text-sm font-semibold">
               Welcome to Charme! Make Your Day Perfect With Us.
