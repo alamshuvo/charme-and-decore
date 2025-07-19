@@ -135,7 +135,8 @@ const Service = () => {
                 {/* Explore Now Button (Always Visible) */}
                 <div className="mt-6">
                <Link to={"https://www.facebook.com/profile.php?id=61577920499599"}>
-               <button className="w-full py-2 bg-gradient-to-r from-[#FFC107] to-[#943cb4] text-white text-sm font-bold rounded-full shadow-md hover:scale-105 hover:shadow-xl transition-all duration-300">
+               <button className="w-full py-2 bg-gradient-to-r from-[#FFC107] to-[#943cb4] text-white text-sm font-bold rounded-full shadow-md hover:scale-105 hover:shadow-xl transition-all duration-300  focus:outline-none focus:ring-2 focus:ring-[#FFC107] focus:ring-offset-2
+  animate-[glow_2s_ease-in-out_infinite]">
                     Explore Now
                   </button>
                </Link>
