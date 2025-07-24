@@ -3,6 +3,14 @@ import { Link } from "react-router-dom";
 
 const services = [
   {
+    title: "yellow function decorations",
+    description:
+      "Add a burst of sunshine to your special day with vibrant yellow-themed decor, balloons, custom table setups, and cheerful floral arrangements. Perfect for birthdays, baby showers, or mehendi functions — our yellow concept brings warmth, joy, and elegance to any event! 🌼✨",
+    img: "https://i.ibb.co/RTgR0yyb/BEEF4814-96-D1-4304-87-CB-25261-C12-E939.jpg",
+    prize: "120 Euro",
+    time: "1.2 hours",
+  },
+  {
     title: "Hello Kitty Birthday Decorations",
     description:
       "Create a magical Hello Kitty-themed birthday party with customized decor, balloons, and table settings that kids will love. We offer themed props, character cutouts, and vibrant pink and white designs to make your little one’s day extra special!",
