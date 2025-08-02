@@ -127,7 +127,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar some code added  added some code  */}
-      {/* Some code added  */}
+      {/* Some code added   some code added */}
       <div className="text-center text-white font-danching animate-slideDown bg-gradient-to-r from-[#943cb4] to-[#FFC107] md:text-xl sm:text-xs border-t  border-white/30 py-5 px-6 bg-black bg-opacity-10">
         © {new Date().getFullYear()} iftakharalamshuvo11@gmail.com | +8801980640702. All Rights Reserved.
       </div>
