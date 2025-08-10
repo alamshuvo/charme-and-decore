@@ -58,6 +58,30 @@ const services = [
     prize: "90 Euro",
     time: "2 hours setup",
   },
+  {
+    title: "birthday set up",
+    description:
+      "Celebrate the joy of bitrhday with our elegant . We create dreamy themes with balloons, flowers, banners, and more—perfect for unforgettable memories. Let your guests feel the warmth of this special occasion.",
+    img: "https://i.ibb.co.com/8nmv1gNJ/Whats-App-Image-2025-08-07-at-03-22-51.jpg",
+    prize: "130 Euro",
+    time: "2 hours setup",
+  },
+  {
+    title: "weeding set up",
+    description:
+      "Celebrate the joy of weeding with our elegant . We create dreamy themes with balloons, flowers, banners, and more—perfect for unforgettable memories. Let your guests feel the warmth of this special occasion.",
+    img: "https://i.ibb.co.com/kgqsFSRP/Whats-App-Image-2025-08-07-at-03-22-01.jpg",
+    prize: "250 Euro",
+    time: "2 hours setup",
+  },
+  {
+    title: "Engagement ceremony",
+    description:
+      "Celebrate the joy of weeding with our elegant . We create dreamy themes with balloons, flowers, banners, and more—perfect for unforgettable memories. Let your guests feel the warmth of this special occasion.",
+    img: "https://i.ibb.co.com/VcwzXDbn/Whats-App-Image-2025-08-07-at-03-21-24.jpg",
+    prize: "200 Euro",
+    time: "3 hours setup",
+  },
 ];
 
 const Service = () => {
