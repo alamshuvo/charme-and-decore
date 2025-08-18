@@ -83,7 +83,7 @@ const services = [
     time: "3 hours setup",
   },
 ];
-// for text purpose some code added 
+// for text purpose some code added added some code 
 const Service = () => {
   const [expanded, setExpanded] = useState(null);
 
