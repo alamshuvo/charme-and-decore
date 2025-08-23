@@ -31,7 +31,7 @@ const Nav = () => {
           />
         </Link>
         {/* Title */}
-        <div className="hidden md:block">
+        <div className="hidden md:block ">
           <p className="font-danching text-2xl md:text-3xl text-white">
             Fahima Chowdhuri Tripty
           </p>

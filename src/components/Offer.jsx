@@ -1,17 +1,54 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
 
 export default function OfferBanner() {
   const [show, setShow] = useState(true);
+  const bannerRef = useRef(null);
+
+  // ✅ Register GSAP plugin
+  gsap.registerPlugin(useGSAP);
+
+  // ✅ Animate when banner shows
+  useGSAP(() => {
+    if (bannerRef.current) {
+      gsap.fromTo(
+        bannerRef.current,
+        { y: -100, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }
+      );
+    }
+  }, [show]); // re-run animation when show changes
+
+  // ✅ Handle closing animation
+  const handleClose = () => {
+    gsap.to(bannerRef.current, {
+      y: -100,
+      opacity: 0,
+      duration: 0.6,
+      ease: "power3.in",
+      onComplete: () => setShow(false),
+    });
+  };
 
   return (
     <>
       {show && (
-        <div className="font-fustat animate-slideDown bg-gradient-to-r from-[#943cb4] to-[#FFC107]">
+        <div
+          ref={bannerRef}
+          className="font-fustat bg-gradient-to-r from-[#943cb4] to-[#FFC107]"
+        >
           <div className="max-w-[1440px] px-5 lg:px-20 mx-auto py-2 flex flex-col lg:flex-row justify-between items-center gap-y-2">
             {/* Offer Text */}
             <p className="text-white text-sm font-semibold text-center lg:text-left">
-              🎉 <span className="font-bold underline font-fustat">Limited Time Offer:</span> Book a Baby Shower, Birthday, or Anniversary decoration now & get <span className="text-black font-bold">15% OFF</span> — valid till <span className="text-black font-semibold">July 31</span>! 💐
+              🎉{" "}
+              <span className="font-bold underline font-fustat">
+                Limited Time Offer:
+              </span>{" "}
+              Book a Baby Shower, Birthday, or Anniversary decoration now & get{" "}
+              <span className="text-black font-bold">15% OFF</span> — valid till{" "}
+              <span className="text-black font-semibold">Sept 28</span>! 💐
             </p>
 
             {/* Buttons */}
@@ -26,7 +63,7 @@ export default function OfferBanner() {
               </Link>
 
               <button
-                onClick={() => setShow(false)}
+                onClick={handleClose}
                 className="text-white text-xl font-bold hover:text-gray-200 transition"
                 aria-label="Close offer banner"
               >
