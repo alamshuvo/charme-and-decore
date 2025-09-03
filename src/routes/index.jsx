@@ -26,5 +26,5 @@ const router = createBrowserRouter([
     ],
   },
 ]);
-// some code added  and some code added some code   some code added and some code addded
+// some code added  and some code added some code some code added   some code added and some code addded
 export default router;
